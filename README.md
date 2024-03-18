@@ -24,8 +24,8 @@ Para executar o jogo, você precisará ter o Java JDK instalado em seu sistema. 
    javac GuessingGameInterface.java GuessingGameServer.java GuessingGameClient.java
 2. Execute o servidor:
    ```bash
-   java -Djava.security.policy=security.policy Advinhacao.GuessingGameServer
+   java GuessingGameServer
 3. Execute o cliente em uma nova janela ou terminal:
    ```bash
-   java -Djava.security.policy=security.policy Advinhacao.GuessingGameClient
+   java GuessingGameClient
 Siga as instruções exibidas no cliente para interagir com o jogo e divirta-se!
