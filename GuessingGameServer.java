@@ -19,11 +19,12 @@ public class GuessingGameServer extends UnicastRemoteObject implements GuessingG
 
     @Override
     public String guess(int number) throws RemoteException {
-        if (number < secretNumber) {
-            return "O número é maior que " + number;
-        } else if (number > secretNumber) {
-            return "O número é menor que " + number;
-        } else {
+        switch (Integer.compare(number, secretNumber)) {
+            case -1:
+                return "O número é maior que " + number;
+            case 1: 
+                return "O número é menor que " + number;
+            default:
             generateSecretNumber();
             return "Parabéns! Você acertou!";
         }
