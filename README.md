@@ -4,7 +4,7 @@ Este é um simples jogo de adivinhação implementado em Java utilizando a tecno
 
 ## Como Jogar
 
-O objetivo do jogo é adivinhar o número secreto, que está entre 1 e 100, inclusive. O servidor gera um número aleatório no início de cada novo jogo. Os jogadores, através de seus clientes, podem enviar um palpite para o servidor. O servidor responde com "Alto" se o palpite for maior que o número secreto, "Baixo" se o palpite for menor que o número secreto e "Correto" se o palpite for igual ao número secreto.
+O objetivo do jogo é adivinhar o número secreto, que está entre 1 e 100, inclusive. O servidor gera um número aleatório no início de cada novo jogo. Os jogadores, através de seus clientes, podem enviar um palpite para o servidor. O servidor responde com "O número é maior que " se o palpite for maior que o número secreto, "O número é menor que " se o palpite for menor que o número secreto e "Parabéns! Você acertou!" se o palpite for igual ao número secreto.
 
 ### Regras
 
